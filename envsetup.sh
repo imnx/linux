@@ -8,5 +8,6 @@ INSTALL_MOD_PATH=$(pwd)/kernel-out/
 INSTALL_HDR_PATH=$(pwd)/kernel-out/usr/
 INSTALL_PATH=$(pwd)/boot/
 mkdir -p kernel-out/boot/ kernel-out/usr/bin/ kernel-out/lib/modules/ kernel-out/lib/firmware/
+cp $(pwd)/imnx/kernel_config $(pwd)/.config
 export ARCH CROSS_COMPILE KERNEL INSTALL_FW_PATH INSTALL_MOD_PATH INSTALL_PATH
 /bin/bash
